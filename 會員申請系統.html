@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+       <!--頁首-->
+    <div data-role="page" id="page1" data-theme="b">
+        <div data-role="header" data-position="fixed" style="background-color:deeppink">
+            <h1>覺得冷會員註冊</h1>
+        </div>
+
+        <!--頁中-->
+        <div data-role="content">
+            <form>
+                <div data-role="fieldcontain">
+                    <label for="tIt">會員名稱:</label>
+                    <input type="text" name="tIt" id="tIt" value="" placeholder="暱稱" />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="tem">E-mail:</label>
+                    <input type="email" name="tem" id="tem" value="" />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="tel">電話:</label>
+                    <input type="tel" name="tel" id="tel" />
+                </div>
+
+                <div>
+                    <label for="mel">性別:</label>
+                    <select name="mel" id="mel">
+                        <option value="空"> </option>
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                    <label for="w">婚姻狀況:</label>
+                    <select name="w" id="w">
+                        <option value="y">已婚</option>
+                        <option value="n">未婚</option>
+                    </select>
+                </div>
+
+                <div>
+                    <fieldset data-role="controlgroup">
+                        <legend>可約會天數:</legend>
+                        <input type="checkbox" name="Mon" id="Mon" /> <label for="Mon">Monday </label>
+                        <input type="checkbox" name="Tue" id="Tue" /> <label for="Tue">Tuesday</label>
+                        <input type="checkbox" name="Wed" id="Wed" /> <label for="Wed">Wednesday</label>
+                        <input type="checkbox" name="Thu" id="Thu" /> <label for="Thu">Thursday </label>
+                        <input type="checkbox" name="Fri" id="Fri" /> <label for="Fri">Friday</label>
+                        <input type="checkbox" name="Sat" id="Sat" /> <label for="Sat">Saturday</label>
+                        <input type="checkbox" name="Sun" id="Sun" /> <label for="Sun">Sunday</label>
+                    </fieldset>
+                </div>
+
+
+                <fieldset data-role="controlgroup">
+                    <label for="sltCity[]"></label>
+                    <select name="sltCity[]" id="sltCity" data-native-menu="false" multiple>
+                        <option value="-1" data-placeholder="true">約會地點:</option>
+                        <option value="0">台北市</option>
+                        <option value="1">台中市</option>
+                        <option value="2">台南市</option>
+                        <option value="3">高雄市</option>
+                    </select>
+                </fieldset>
+
+
+                <fieldset data-role="controlgroup">
+                    <legend>年齡區間:</legend>
+                    <input type="radio" name="age" id="age18" value="0" checked="checked" />
+                    <label for="age18">18-25歲</label>
+
+                    <input type="radio" name="age" id="age26" value="1" />
+                    <label for="age26">26-32歲</label>
+
+                    <input type="radio" name="age" id="age32" value="2" />
+                    <label for="age32">32-40歲</label>
+                </fieldset>
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <input type="submit" name="btnOK" value="提交" />
+                    </div>
+                    <div class="ui-block-b">
+                        <input type="submit" name="btnCancel" value="重填" />
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+
+        <div data-role="footer" data-position="fixed">
+            <h2 style="background-color:deeppink">安心交友快樂出遊</h2>
+        </div>
+    </div>
+</body>
+</html>
